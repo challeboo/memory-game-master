@@ -16,10 +16,9 @@ state = {
 render () {
   return (
   <div className="game" >
-  <Card src={this.state.cards[0].src}/>
-  <Card src={this.state.cards[1].src}/>
-  <Card src={this.state.cards[2].src}/>
-  <Card src={this.state.cards[3].src}/>
+  {this.state.cards.map((card) => (
+<Card src={card.src}/>
+  ))}
     </div>
   )
 }
