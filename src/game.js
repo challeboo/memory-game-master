@@ -1,9 +1,10 @@
 import React from 'react'
 import Card from "./card"
+import Counter from "./counter"
 
 const Game = () => (
 <div className="game" >
-<span><h1> Memory Game </h1></span>
+  <Counter />
   <Card src= "/Images/doggo1.jpg"/>
   <Card src= "/Images/doggo2.jpg"/>
   <Card src= "/Images/doogo3.jpg"/>
